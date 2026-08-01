@@ -35,16 +35,20 @@ After major flooding events in Pakistan, including the 2022 floods and recurring
 ## Screenshots
 
 ### Home Screen
-![Sailaab Sahara home screen with disclaimer banner](screenshots/home-screen.png)
+![Sailaab Sahara home screen with disclaimer banner](screenshots/home-screen.png)<img width="1342" height="641" alt="home-screen-english" src="https://github.com/user-attachments/assets/47ad9e1e-4fd8-4a38-8185-fd049093a7d8" />
+
 
 ### Guidance Response
-![Example AI-generated guidance response](screenshots/guidance-response.png)
+![Example AI-generated guidance response](screenshots/guidance-response.png)<img width="1340" height="642" alt="guidance-english" src="https://github.com/user-attachments/assets/2780aea5-83bb-4ee1-8072-7b1ab435dff0" />
+
 
 ### Emergency Detection
-![Emergency alert screen showing 1122 helpline](screenshots/emergency-view.png)
+![Emergency alert screen showing 1122 helpline](screenshots/emergency-vi<img width="1338" height="642" alt="emergency-response-eng" src="https://github.com/user-attachments/assets/e8d00aae-c0ce-4f50-b707-bb7e62956a99" />
+ew.png)
 
 ### Helplines Directory
-![Verified helplines directory](screenshots/helplines-directory.png)
+![Verified helplines directory](screenshots/helplines-directory.png)<img width="1342" height="640" alt="helplines-directory" src="https://github.com/user-attachments/assets/80207023-c7d7-468e-b9f7-fc75f9b4c7e2" />
+
 
 ### Urdu Interface
 ![App shown in Urdu with RTL layout](screenshots/urdu-view.png)
