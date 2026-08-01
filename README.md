@@ -94,17 +94,11 @@ cp .env.example .env
 npm run dev
 ```
 
-## Environment Variables
-
-| Variable | Required | Description |
-|---|---|---|
-| `GEMINI_API_KEY` | Yes | Your Google Gemini API key, used server-side only. Never committed to the repository. |
-
 ---
 
 ## Deployment
 
-This project is deployed on **Vercel**, connected directly to the `main` branch of this repository. The `GEMINI_API_KEY` is set as a Vercel environment variable, never hardcoded or exposed to the frontend.
+This project is deployed on **Lovable**, connected directly to the `main` branch of this repository. 
 
 ---
 
