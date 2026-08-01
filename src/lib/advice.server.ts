@@ -51,9 +51,30 @@ function coerce(raw: string): AdviceResult {
   };
 }
 
-export async function getAdvice(situation: string): Promise<AdviceResult> {
+export type AdviceInput = {
+  situation: string;
+  province?: string;
+  district?: string;
+  language?: "ur" | "en";
+};
+
+export async function getAdvice(input: AdviceInput): Promise<AdviceResult> {
   const key = process.env.LOVABLE_API_KEY;
   if (!key) throw new Error("AI is not configured.");
+
+  const lang = input.language === "en" ? "en" : "ur";
+  const emergency = isEmergencySituation(input.situation) ? EMERGENCY_TEXT[lang] : null;
+
+  const userPrompt = [
+    `User Situation: ${input.situation}`,
+    input.province ? `Province: ${input.province}` : "",
+    input.district ? `District: ${input.district}` : "",
+    `Language Preference: ${lang === "ur" ? "Urdu" : "English"}`,
+    "",
+    "Please analyse this situation and provide plain, empathetic guidance following the mandatory sections.",
+  ]
+    .filter(Boolean)
+    .join("\n");
 
   const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
     method: "POST",
@@ -63,12 +84,14 @@ export async function getAdvice(situation: string): Promise<AdviceResult> {
     },
     body: JSON.stringify({
       model: "google/gemini-3-pro-preview",
+      temperature: 0.3,
       messages: [
         { role: "system", content: `${SYSTEM_PROMPT}\n\n${FORMAT_HINT}` },
-        { role: "user", content: situation },
+        { role: "user", content: userPrompt },
       ],
     }),
   });
+
 
   if (!response.ok) {
     const body = await response.text();
