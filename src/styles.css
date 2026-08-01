@@ -49,8 +49,8 @@
   --color-notice: var(--notice);
   --color-notice-foreground: var(--notice-foreground);
   --color-notice-border: var(--notice-border);
-  --font-sans: "Noto Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-urdu: "Noto Nastaliq Urdu", "Noto Sans", serif;
+  --font-sans: "Plus Jakarta Sans", "Noto Sans Arabic", ui-sans-serif, system-ui, sans-serif;
+  --font-urdu: "Noto Nastaliq Urdu", "Noto Sans Arabic", serif;
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -154,4 +154,26 @@
 [dir="rtl"] .urdu-text {
   font-family: var(--font-urdu);
   line-height: 2.2;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+[dir="rtl"] body,
+[dir="rtl"] .font-sans {
+  font-family: var(--font-urdu);
+}
+
+@keyframes bounceShort {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-bounce-short {
+  animation: bounceShort 2s ease-in-out infinite;
 }
