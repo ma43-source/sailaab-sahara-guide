@@ -1,13 +1,13 @@
 # Sailaab Sahara (سیلاب سہارا)
 ### Flood Relief Rights Navigator for Pakistan
 
-**Samajhna Aasan — Understanding your flood relief options, made simple.**
+**Samajhna Aasan: Understanding your flood relief options, made simple.**
 
 ---
 
 ## ⚠️ Important Disclaimer
 
-**This is an independent student project.** It is **not affiliated with NDMA, PDMA, or the Government of Pakistan.** It provides general, AI-assisted guidance only — not legal advice, and not a substitute for official verification. Users are directed to confirm their specific situation with their local PDMA / District Disaster Management Authority office.
+**This is an independent student project.** It is **not affiliated with NDMA, PDMA, or the Government of Pakistan.** It provides general, AI-assisted guidance only, not legal advice, and not a substitute for official verification. Users are directed to confirm their specific situation with their local PDMA / District Disaster Management Authority office.
 
 If you are in immediate danger, **call Rescue 1122 first**, before using this app.
 
@@ -15,9 +15,9 @@ If you are in immediate danger, **call Rescue 1122 first**, before using this ap
 
 ## The Problem
 
-After major flooding events in Pakistan — including the 2022 floods and recurring monsoon flooding — affected people often don't know what government relief, compensation, or support schemes they may qualify for. Information about NDMA/PDMA relief, BISP flood payments, crop and housing compensation, and required documentation is scattered across government notices, PDFs, and news coverage — usually in English, while many affected communities primarily speak Urdu.
+After major flooding events in Pakistan, including the 2022 floods and recurring monsoon flooding, affected people often don't know what government relief, compensation, or support schemes they may qualify for. Information about NDMA/PDMA relief, BISP flood payments, crop and housing compensation, and required documentation is scattered across government notices, PDFs, and news coverage, usually in English, while many affected communities primarily speak Urdu.
 
-**Sailaab Sahara** bridges that gap: a bilingual (Urdu/English) web app where someone describes their situation in plain language and receives structured, hedged guidance on what support categories may apply, what documents they'll likely need, and what steps to take — grounded in disaster-relief research, not guesswork.
+**Sailaab Sahara** bridges that gap: a bilingual (Urdu/English) web app where someone describes their situation in plain language and receives structured, hedged guidance on what support categories may apply, what documents they'll likely need, and what steps to take, grounded in disaster-relief research, not guesswork.
 
 ---
 
@@ -91,10 +91,6 @@ This project is deployed on **Vercel**, connected directly to the `main` branch 
 
 ## Project Context
 
-Built as the final project for the **ACT AI course**, in direct response to the recurring monsoon flooding affecting Pakistan. The guidance content is grounded in independent research on Loss & Damage, disaster law, and humanitarian response frameworks.
+Built as an *Independent Project*, in direct response to the recurring monsoon flooding affecting Pakistan. The guidance content is grounded in independent research on climate vulnerability, disaster law, and humanitarian response frameworks.
 
 ---
-
-## License
-
-MIT — see `LICENSE` for details. Note: the license governs the code only. It does not extend any legal assurance regarding the accuracy of relief information presented by the app — see the disclaimer above.
