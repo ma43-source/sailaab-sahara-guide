@@ -39,7 +39,21 @@ export const t = {
   },
   langLabel: { ur: "زبان", en: "Language" },
   errorTitle: { ur: "کچھ مسئلہ ہوا", en: "Something went wrong" },
+  provinceLabel: { ur: "صوبہ (اختیاری)", en: "Province (optional)" },
+  districtLabel: { ur: "ضلع (اختیاری)", en: "District (optional)" },
+  districtPlaceholder: { ur: "مثال: مظفرگڑھ", en: "e.g. Muzaffargarh" },
+  provinceAny: { ur: "منتخب نہیں", en: "Not selected" },
 } as const;
+
+export const provinces: Array<Record<Lang, string>> = [
+  { ur: "پنجاب", en: "Punjab" },
+  { ur: "سندھ", en: "Sindh" },
+  { ur: "خیبر پختونخوا", en: "Khyber Pakhtunkhwa" },
+  { ur: "بلوچستان", en: "Balochistan" },
+  { ur: "گلگت بلتستان", en: "Gilgit-Baltistan" },
+  { ur: "آزاد جموں و کشمیر", en: "Azad Jammu & Kashmir" },
+  { ur: "اسلام آباد", en: "Islamabad" },
+];
 
 export const resources: Array<{
   title: Record<Lang, string>;

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { AlertTriangle, ClipboardList, FileText, LifeBuoy, ListChecks, Loader2 } from "lucide-react";
 
 import { requestAdvice } from "@/lib/advice.functions";
-import { resources, t, type Lang } from "@/lib/content";
+import { provinces, resources, t, type Lang } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
@@ -34,13 +34,24 @@ function Page() {
   const [lang, setLang] = useState<Lang>("ur");
   const [tab, setTab] = useState<"guide" | "resources">("guide");
   const [situation, setSituation] = useState("");
+  const [province, setProvince] = useState("");
+  const [district, setDistrict] = useState("");
   const rtl = lang === "ur";
   const L = (k: keyof typeof t) => t[k][lang];
 
   const advise = useServerFn(requestAdvice);
   const mutation = useMutation({
-    mutationFn: (text: string) => advise({ data: { situation: text } }),
+    mutationFn: (text: string) =>
+      advise({
+        data: {
+          situation: text,
+          language: lang,
+          ...(province ? { province } : {}),
+          ...(district.trim() ? { district: district.trim() } : {}),
+        },
+      }),
   });
+
 
   return (
     <div
@@ -130,6 +141,41 @@ function Page() {
                   placeholder={L("placeholder")}
                   className="mt-3 w-full rounded-xl border-2 border-input bg-background p-3 text-base outline-none focus:border-ring"
                 />
+
+                <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                  <div>
+                    <label htmlFor="province" className="block text-sm font-semibold">
+                      {L("provinceLabel")}
+                    </label>
+                    <select
+                      id="province"
+                      value={province}
+                      onChange={(e) => setProvince(e.target.value)}
+                      className="mt-1 min-h-12 w-full rounded-xl border-2 border-input bg-background px-3 text-base outline-none focus:border-ring"
+                    >
+                      <option value="">{L("provinceAny")}</option>
+                      {provinces.map((p) => (
+                        <option key={p.en} value={p.en}>
+                          {p[lang]}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div>
+                    <label htmlFor="district" className="block text-sm font-semibold">
+                      {L("districtLabel")}
+                    </label>
+                    <input
+                      id="district"
+                      value={district}
+                      onChange={(e) => setDistrict(e.target.value)}
+                      maxLength={60}
+                      placeholder={L("districtPlaceholder")}
+                      className="mt-1 min-h-12 w-full rounded-xl border-2 border-input bg-background px-3 text-base outline-none focus:border-ring"
+                    />
+                  </div>
+                </div>
+
                 <button
                   type="submit"
                   disabled={mutation.isPending || situation.trim().length < 5}
