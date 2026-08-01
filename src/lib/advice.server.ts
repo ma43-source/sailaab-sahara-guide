@@ -106,8 +106,10 @@ export async function getAdvice(input: AdviceInput): Promise<AdviceResult> {
   };
   const text = data.choices?.[0]?.message?.content ?? "";
   const result = coerce(text);
+  if (emergency) result.emergency = emergency;
   if (!result.eligibility.length && !result.steps.length && !result.emergency) {
     throw new Error("Could not read the AI response. Please try again.");
   }
+
   return result;
 }
