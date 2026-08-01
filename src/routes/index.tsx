@@ -5,7 +5,7 @@ import { useState } from "react";
 import { AlertTriangle, ClipboardList, FileText, LifeBuoy, ListChecks, Loader2 } from "lucide-react";
 
 import { requestAdvice } from "@/lib/advice.functions";
-import { resources, t, type Lang } from "@/lib/content";
+import { provinces, resources, t, type Lang } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
