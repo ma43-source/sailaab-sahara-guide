@@ -13,6 +13,12 @@ If you are in immediate danger, **call Rescue 1122 first**, before using this ap
 
 ---
 
+## App Link 
+
+https://sailaab-sahara-guide.lovable.app
+
+---
+
 ## The Problem
 
 After major flooding events in Pakistan, including the 2022 floods and recurring monsoon flooding, affected people often don't know what government relief, compensation, or support schemes they may qualify for. Information about NDMA/PDMA relief, BISP flood payments, crop and housing compensation, and required documentation is scattered across government notices, PDFs, and news coverage, usually in English, while many affected communities primarily speak Urdu.
