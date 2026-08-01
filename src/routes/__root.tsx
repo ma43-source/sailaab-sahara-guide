@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Sailaab Sahara — Flood Relief Rights Navigator" },
+      { name: "description", content: "Plain-language guidance for flood-affected people in Pakistan on relief, compensation and documents. Independent project, Urdu and English." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Sailaab Sahara — Flood Relief Rights Navigator" },
+      { property: "og:description", content: "Plain-language guidance for flood-affected people in Pakistan on relief, compensation and documents. Independent project, Urdu and English." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Sailaab Sahara — Flood Relief Rights Navigator" },
+      { name: "twitter:description", content: "Plain-language guidance for flood-affected people in Pakistan on relief, compensation and documents. Independent project, Urdu and English." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/78ac9087-ffa5-434b-b1d1-a2597774251a" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/78ac9087-ffa5-434b-b1d1-a2597774251a" },
     ],
     links: [
       {

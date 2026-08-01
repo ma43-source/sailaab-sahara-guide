@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Understand what flood relief support you may be eligible for and what steps to take next. Urdu and English.",
+          "Plain-language guidance for flood-affected people in Pakistan on relief, compensation and documents. Independent project, Urdu and English.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
