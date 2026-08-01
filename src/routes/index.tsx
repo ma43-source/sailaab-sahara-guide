@@ -34,13 +34,24 @@ function Page() {
   const [lang, setLang] = useState<Lang>("ur");
   const [tab, setTab] = useState<"guide" | "resources">("guide");
   const [situation, setSituation] = useState("");
+  const [province, setProvince] = useState("");
+  const [district, setDistrict] = useState("");
   const rtl = lang === "ur";
   const L = (k: keyof typeof t) => t[k][lang];
 
   const advise = useServerFn(requestAdvice);
   const mutation = useMutation({
-    mutationFn: (text: string) => advise({ data: { situation: text } }),
+    mutationFn: (text: string) =>
+      advise({
+        data: {
+          situation: text,
+          language: lang,
+          ...(province ? { province } : {}),
+          ...(district.trim() ? { district: district.trim() } : {}),
+        },
+      }),
   });
+
 
   return (
     <div
