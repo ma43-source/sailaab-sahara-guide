@@ -46,17 +46,20 @@ export const GuidanceCard: React.FC<GuidanceCardProps> = ({
   // Helper function to render text nicely with bold markdown formatting and lists
   const renderFormattedText = (rawText: string) => {
     const paragraphs = rawText.split('\n\n').filter(Boolean);
+    const stripMarks = (s: string) =>
+      s.replace(/^#{1,6}\s*/, '').replace(/^[-*•]\s+/, '').replace(/^\d+[\.\)]\s*/, '').trim();
 
     return (
       <div className="space-y-5 text-slate-700 text-sm sm:text-base leading-relaxed">
         {paragraphs.map((para, idx) => {
           // Check if paragraph looks like a section header
-          const isHeader = /^(\d+[\.\)]|\#+|[A-Z\s]{4,}|\(?\d+\)?)/i.test(para.trim());
+          const isHeader = /^(#{1,6}\s|\(?\d+[\.\)]\s*(likely|documents|concrete|ممکنہ|ضروری|اگلا))/i.test(para.trim())
+            && para.trim().split('\n').length === 1;
 
           if (isHeader) {
             return (
-              <h3 key={idx} className="text-teal-800 font-bold text-sm sm:text-base border-l-4 rtl:border-l-0 rtl:border-r-4 border-teal-500 pl-3 rtl:pl-0 rtl:pr-3 mb-2 uppercase tracking-wide">
-                {para}
+              <h3 key={idx} className="text-teal-800 font-bold text-base sm:text-lg border-l-4 rtl:border-l-0 rtl:border-r-4 border-teal-500 pl-3 rtl:pl-0 rtl:pr-3 mb-2 tracking-wide">
+                {stripMarks(para)}
               </h3>
             );
           }
@@ -67,10 +70,11 @@ export const GuidanceCard: React.FC<GuidanceCardProps> = ({
             <div key={idx} className="space-y-1.5">
               {lines.map((line, lIdx) => {
                 const trimmed = line.trim();
-                const isBullet = trimmed.startsWith('-') || trimmed.startsWith('*') || /^\d+\./.test(trimmed);
+                const isBullet = /^([-*•]\s|\d+[\.\)]\s)/.test(trimmed);
+                const content = isBullet ? stripMarks(trimmed) : trimmed.replace(/^#{1,6}\s*/, '');
 
                 // Simple bold replacement for **text**
-                const parts = trimmed.split(/(\*\*.*?\*\*)/g);
+                const parts = content.split(/(\*\*.*?\*\*)/g);
                 const formattedLine = parts.map((part, pIdx) => {
                   if (part.startsWith('**') && part.endsWith('**')) {
                     return <strong key={pIdx} className="font-bold text-slate-900">{part.slice(2, -2)}</strong>;
@@ -89,6 +93,13 @@ export const GuidanceCard: React.FC<GuidanceCardProps> = ({
 
                 return <p key={lIdx} className="text-slate-700 font-normal">{formattedLine}</p>;
               })}
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
+
             </div>
           );
         })}
