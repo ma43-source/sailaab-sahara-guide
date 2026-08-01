@@ -100,12 +100,7 @@ export const GuidanceCard: React.FC<GuidanceCardProps> = ({
     );
   };
 
-            </div>
-          );
-        })}
-      </div>
-    );
-  };
+
 
   return (
     <div className="space-y-6" id="guidance-results-card">
