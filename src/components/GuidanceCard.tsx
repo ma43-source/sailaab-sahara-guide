@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Language, AssessmentResponse } from '../types';
 import { t } from '../data/translations';
-import { isEmergencySituation } from '../App';
+import { isEmergencySituation } from '../lib/emergency';
 import {
   PhoneCall,
   CheckCircle2,
