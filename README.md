@@ -21,6 +21,10 @@ After major flooding events in Pakistan, including the 2022 floods and recurring
 
 ---
 
+## Live App Link: https://sailaab-sahara-guide.lovable.app
+
+---
+
 ## Core Features
 
 - **Bilingual interface** (Urdu / English), with full RTL support for Urdu
@@ -47,7 +51,6 @@ After major flooding events in Pakistan, including the 2022 floods and recurring
 
 ### Emergency Detection
 <img width="1338" height="642" alt="emergency-response-eng" src="https://github.com/user-attachments/assets/e8d00aae-c0ce-4f50-b707-bb7e62956a99" />
-ew.png)
 
 
 ### Helplines Directory
