@@ -1,7 +1,9 @@
 import React from 'react';
 import { Language, ViewTab } from '../types';
 import { t } from '../data/translations';
-import { ShieldAlert, BookOpen, PhoneCall, BookmarkCheck, Languages, Waves } from 'lucide-react';
+import { ShieldAlert, BookOpen, PhoneCall, BookmarkCheck, Languages } from 'lucide-react';
+import logoAsset from '../assets/sailaab-sahara-logo.png.asset.json';
+
 
 interface NavbarProps {
   language: Language;
@@ -28,9 +30,12 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Logo & Title */}
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3 rtl:space-x-reverse cursor-pointer" onClick={() => onTabChange('navigator')}>
-              <div className="w-10 h-10 rounded-lg bg-teal-600/80 flex items-center justify-center text-white border border-teal-400/40 shadow-sm">
-                <Waves className="w-6 h-6 animate-pulse text-white" />
-              </div>
+              <img
+                src={logoAsset.url}
+                alt={t(language, 'appName')}
+                className="w-10 h-10 rounded-lg bg-white object-contain border border-teal-400/40 shadow-sm"
+              />
+
               <div>
                 <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-white flex items-center gap-2">
                   {t(language, 'appName')}
