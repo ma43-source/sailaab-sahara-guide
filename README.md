@@ -34,31 +34,36 @@ After major flooding events in Pakistan, including the 2022 floods and recurring
 
 ## Screenshots
 
+
 ### Home Screen
-Home Screen in English and Urdu <img width="1342" height="641" alt="home-screen-english" src="https://github.com/user-attachments/assets/47ad9e1e-4fd8-4a38-8185-fd049093a7d8" />
-<img width="1343" height="646" alt="home-screen-urdu" src="https://github.com/user-attachments/assets/095e7609-7111-459e-92ed-3475d6261115" />
+ <img width="1342" height="641" alt="home-screen-english" src="https://github.com/user-attachments/assets/47ad9e1e-4fd8-4a38-8185-fd049093a7d8" />
 
 
 
 ### Guidance Response
-Guidance Response in Both English and Urdu <img width="1340" height="642" alt="guidance-english" src="https://github.com/user-attachments/assets/2780aea5-83bb-4ee1-8072-7b1ab435dff0" />
+<img width="1340" height="642" alt="guidance-english" src="https://github.com/user-attachments/assets/2780aea5-83bb-4ee1-8072-7b1ab435dff0" />
 
-<img width="1341" height="641" alt="guidance-urdu" src="https://github.com/user-attachments/assets/f28e1e57-b851-411a-a2f5-3dff814aec37" />
 
 
 ### Emergency Detection
-Emergency Detection in English and Urdu <img width="1338" height="642" alt="emergency-response-eng" src="https://github.com/user-attachments/assets/e8d00aae-c0ce-4f50-b707-bb7e62956a99" />
+<img width="1338" height="642" alt="emergency-response-eng" src="https://github.com/user-attachments/assets/e8d00aae-c0ce-4f50-b707-bb7e62956a99" />
 ew.png)
 
-<img width="1341" height="639" alt="emergency-guidance-urdu" src="https://github.com/user-attachments/assets/dd3eeae0-8549-487c-9e98-18765b2006d0" />
 
 ### Helplines Directory
  <img width="1342" height="640" alt="helplines-directory" src="https://github.com/user-attachments/assets/80207023-c7d7-468e-b9f7-fc75f9b4c7e2" />
 
 
 ### Urdu Interface
-(screenshots/urdu-view.png)<img width="1343" height="646" alt="home-screen-urdu" src="https://github.com/user-attachments/assets/caba49f5-5fe8-43e9-a926-214feb522526" />
+Home Screen<img width="1343" height="646" alt="home-screen-urdu" src="https://github.com/user-attachments/assets/caba49f5-5fe8-43e9-a926-214feb522526" />
 
+
+Guidance Response
+<img width="1341" height="641" alt="guidance-urdu" src="https://github.com/user-attachments/assets/a3c08a21-17f4-45d4-a036-30c8659db308" />
+
+
+Emergency Detection
+<img width="1341" height="639" alt="emergency-guidance-urdu" src="https://github.com/user-attachments/assets/daff1fb6-36da-45e6-ae64-40b83ea5a0fc" />
 
 ---
 
