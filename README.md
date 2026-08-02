@@ -35,7 +35,9 @@ After major flooding events in Pakistan, including the 2022 floods and recurring
 ## Screenshots
 
 ### Home Screen
-(screenshots/home-screen.png)<img width="1342" height="641" alt="home-screen-english" src="https://github.com/user-attachments/assets/47ad9e1e-4fd8-4a38-8185-fd049093a7d8" />
+Home Screen in English and Urdu Language <img width="1342" height="641" alt="home-screen-english" src="https://github.com/user-attachments/assets/47ad9e1e-4fd8-4a38-8185-fd049093a7d8" />
+<img width="1343" height="646" alt="home-screen-urdu" src="https://github.com/user-attachments/assets/095e7609-7111-459e-92ed-3475d6261115" />
+
 
 
 ### Guidance Response
